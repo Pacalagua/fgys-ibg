@@ -380,6 +380,12 @@ h6 {
   border-color: var(--accent-color);
 }
 
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer .credits {
   margin-top: 10px;
   font-size: 13px;
@@ -1609,6 +1615,20 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+.lista-ol {
+  counter-reset: item;
+}
+
+.lista-li {
+  display: block
+}
+
+.lista-li:before {
+  font-weight: bold;
+  content: counters(item, ".") ". ";
+  counter-increment: item;
 }
 
 .starter-section {
